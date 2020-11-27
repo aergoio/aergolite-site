@@ -809,9 +809,10 @@ textarea {
 #form-message {
     margin-top: 15px;
 }
-.centro {
+
+.center {
 	margin: 0 auto !important;
-    float: none !important;
+	float: none !important;
 }
 
 blockquote {
