@@ -812,7 +812,7 @@ textarea {
 
 .center {
 	margin: 0 auto !important;
-	float: none !important;
+	/* float: none !important; */
 }
 
 blockquote {
@@ -863,6 +863,12 @@ p.first {
 
 img.icon {
     height: 180px;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 480px) {
+  .container p {
+    text-align: center;
+  }
 }
 
 .no-padding-bottom {
