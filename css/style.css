@@ -15,14 +15,6 @@ body {
   position: relative
 }
 
-a {
-  color: #55acee
-}
-
-a:hover {
-  color: #339beb
-}
-
 a:active,
 a:focus {
   outline: 0;
@@ -44,12 +36,6 @@ img {
   background-color: #da4693
 }
 
-.banner-image {
-  vertical-align: middle;
-  min-height: 100%;
-  width: 100%
-}
-
 .banner:after {
   position: absolute;
   top: 0;
@@ -60,10 +46,9 @@ img {
 }
 
 .banner-caption {
-  position: absolute;
-  top: 33%;
-  width: 100%;
-  z-index: 2
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-38%);
 }
 
 .section {
