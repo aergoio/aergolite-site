@@ -188,50 +188,51 @@ img.icon {
   padding-bottom: 0
 }
 
-.navbar {
-  border-radius: unset;
-  margin-top: 25px
+.menu {
+  margin: 24px 0 13px 0;
+  display: flex;
 }
 
-.navbar-brand {
-  padding: 0
+.menu-brand {
+  height: 50px;
+  padding-left: 20px;
 }
 
-.navbar-right {
+.menu-right {
+  display: flex;
+  float: right;
   margin-right: 0;
+  margin-left: auto;
   padding-right: 10px;
-  margin-top: 10px
 }
 
-.navbar-nav>li>a {
+@media (max-width:620px) {
+  .menu {
+    display: block;
+  }
+  .menu-brand {
+    margin: auto;
+    float: none;
+    padding-left: 0;
+  }
+  .menu-right {
+    margin: auto;
+    float: none;
+    padding: 0;
+  }
+  .menu-right> div {
+    width: 33%;
+    text-align: center;
+  }
+}
+
+.menu-right>div>a {
   font-size: x-large;
   color: #3e2f37;
   padding: 0 30px
 }
 
-.nav>li>a:focus,
-.nav>li>a:hover {
+.menu-right>div>a:focus,
+.menu-right>div>a:hover {
   background-color: unset
-}
-
-.navbar-brand {
-  margin: auto;
-  float: none
-}
-
-@media (min-width:768px) {
-  .navbar-brand {
-    margin-left: 0!important
-  }
-}
-
-.nav {
-  display: flex
-}
-
-@media (max-width:767px) {
-  .navbar-nav {
-    margin-left: 0
-    padding-right: 0;
-  }
 }
