@@ -847,9 +847,23 @@ blockquote p {
     color: #000;
 }
 
+#main-logo {
+  max-width: 80%;
+}
+
 p.under {
-    font-size: xxx-large;
+    font-size: x-large;
     text-align: center;
+}
+@media only screen and (min-width: 480px) {
+  p.under {
+    font-size: xx-large;
+  }
+}
+@media only screen and (min-width: 769px) {
+  p.under {
+    font-size: xxx-large;
+  }
 }
 
 p.center {
