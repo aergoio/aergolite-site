@@ -205,7 +205,6 @@ img.icon {
 
 .navbar-nav>li>a {
   font-size: x-large;
-  font-weight: 700;
   color: #3e2f37;
   padding: 0 30px
 }
@@ -233,5 +232,6 @@ img.icon {
 @media (max-width:767px) {
   .navbar-nav {
     margin-left: 0
+    padding-right: 0;
   }
 }
